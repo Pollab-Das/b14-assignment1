@@ -1,0 +1,424 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navbar Layout Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px 40px;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #eef0f3;
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    background-color: #0b192c;
+    color: #38bdf8;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-title {
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.logo-year {
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Navigation Links */
+.nav-menu {
+    display: flex;
+    gap: 28px;
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #1e293b;
+}
+
+/* Register Button Styles (Navbar) */
+.cta-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-register {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-register:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==========================================
+   Hero / Banner Section Styles
+   ========================================== */
+.hero-section {
+    position: relative;
+    height: calc(100vh - 80px);
+    min-height: 500px;
+    background: linear-gradient(rgba(82, 79, 79, 0.75), rgba(0, 0, 0, 0.75)), url('./image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    line-height: 1.15;
+}
+
+.hero-title .italic-text {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 680px;
+}
+
+.hero-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.hero-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==========================================
+   Meet the Speakers Section Styles
+   ========================================== */
+.speakers-section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.speakers-section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.speaker-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-image-box {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.speaker-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.speaker-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.speaker-track {
+    color: #2563eb;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.speaker-name {
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.speaker-role {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* ==========================================
+   Secure Your Spot Pricing Section Styles
+   ========================================== */
+.pricing-section {
+    padding: 80px 40px 100px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pricing-section-title {
+    font-size: 36px;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pricing-section-subtitle {
+    font-size: 15px;
+    color: #64748b;
+}
+
+/* 3-Column horizontal flexible pricing cards layout */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Generic Card Baseline Setup */
+.pricing-card {
+    border-radius: 14px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid rgba(100, 116, 139, 0.15);
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+}
+
+.tier-label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.price-box {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.price-box .currency {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.price-box .amount {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.per-text {
+    font-size: 14px;
+}
+
+/* Feature Lists & Blue Custom Bullet Styles */
+.feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-grow: 1; /* Pushes button systematically to the baseline */
+}
+
+.feature-list li {
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+/* Generates custom color-accurate bullet icons directly via CSS pseudo-selectors */
+.feature-list li::before {
+    content: "•";
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Generic baseline configuration for Tier Buttons */
+.btn-tier {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+/* Specific Card Themes & Custom Variations */
+/* 1. Standard (White Background with subtle border) */
+.card-standard {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+.card-standard .tier-label { color: #64748b; }
+.card-standard .price-box { color: #0f172a; }
+.card-standard .per-text { color: #64748b; }
+.card-standard .feature-list li { color: #334155; }
+
+.btn-outline-blue {
+    background-color: transparent;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+.btn-outline-blue:hover {
+    background-color: #eff6ff;
+}
+
+/* 2. Pro (Dark Navy Background Highlight Card) */
+.card-pro {
+    background-color: #0b1329; /* Exact rich deep dark navy color */
+    border: none;
+}
+.card-pro .tier-label { color: #38bdf8; }
+.card-pro .price-box { color: #ffffff; }
+.card-pro .per-text { color: #94a3b8; }
+.card-pro .feature-list li { color: #cbd5e1; }
+.card-pro .feature-list li::before { color: #38bdf8; } /* Bright light-blue bullets for dark section layout */
+
+.btn-solid-blue {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+}
+.btn-solid-blue:hover {
+    background-color: #1d4ed8;
+}
+
+/* 3. Team (Light Neutral Background) */
+.card-team {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+.card-team .tier-label { color: #64748b; }
+.card-team .price-box { color: #0f172a; }
+.card-team .per-text { color: #64748b; }
+.card-team .feature-list li { color: #334155; }
+
+.btn-outline-dark {
+    background-color: transparent;
+    color: #0f172a;
+    border: 1px solid #0f172a;
+}
+.btn-outline-dark:hover {
+    background-color: #f1f5f9;
+}
+
