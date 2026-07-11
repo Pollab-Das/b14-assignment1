@@ -1,18 +1,19 @@
-/* Reset basic styles */
+/*basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body
+{
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
     overflow-x: hidden;
 }
 
-/* Navbar Layout Container */
-.navbar {
+.navbar
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,54 +26,35 @@ body {
     z-index: 10;
 }
 
-/* Logo Styles */
-.logo-container {
+/* logo*/
+.logo-container 
+{
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
-.logo-icon {
-    background-color: #0b192c;
-    color: #38bdf8;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 16px;
-}
+/* image*/
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-
-.logo-title {
-    color: #1e293b;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-}
-
-.logo-year {
-    color: #1e293b;
-    font-weight: 700;
-    font-size: 16px;
+.navbar-logo
+{
+    height: 44px; 
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 /* Navigation Links */
-.nav-menu {
+
+.nav-menu
+{
     display: flex;
     gap: 28px;
     margin-left: auto;
     margin-right: 48px;
 }
 
-.nav-link {
+.nav-link
+{
     text-decoration: none;
     color: #64748b;
     font-size: 15px;
@@ -80,17 +62,19 @@ body {
     transition: color 0.2s ease;
 }
 
-.nav-link:hover {
-    color: #1e293b;
+.nav-link:hover
+{
+    color: #0f172a;
 }
 
-/* Register Button Styles (Navbar) */
-.cta-container {
+.cta-container
+{
     display: flex;
     align-items: center;
 }
 
-.btn-register {
+.btn-register
+{
     background-color: #2563eb;
     color: #ffffff;
     font-size: 15px;
@@ -102,18 +86,17 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.btn-register:hover {
+.btn-register:hover
+{
     background-color: #1d4ed8;
 }
 
-/* ==========================================
-   Hero / Banner Section Styles
-   ========================================== */
-.hero-section {
+.hero-section
+{
     position: relative;
     height: calc(100vh - 80px);
     min-height: 500px;
-    background: linear-gradient(rgba(82, 79, 79, 0.75), rgba(0, 0, 0, 0.75)), url('./image/banner.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./image/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,14 +107,16 @@ body {
     padding: 0 20px;
 }
 
-.hero-content {
+.hero-content
+{
     max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero-title {
+.hero-title
+{
     color: #ffffff;
     font-size: 56px;
     font-weight: 700;
@@ -140,12 +125,14 @@ body {
     line-height: 1.15;
 }
 
-.hero-title .italic-text {
+.hero-title .italic-text
+{
     font-style: italic;
     font-weight: 700;
 }
 
-.hero-description {
+.hero-description
+{
     color: #cbd5e1;
     font-size: 18px;
     line-height: 1.6;
@@ -153,7 +140,8 @@ body {
     max-width: 680px;
 }
 
-.hero-btn {
+.hero-btn
+{
     background-color: #2563eb;
     color: #ffffff;
     font-size: 16px;
@@ -165,34 +153,38 @@ body {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.hero-btn:hover {
+.hero-btn:hover
+{
     background-color: #1d4ed8;
 }
 
-/* ==========================================
-   Meet the Speakers Section Styles
-   ========================================== */
-.speakers-section {
+/* Meet Section */
+
+.speakers-section
+{
     padding: 80px 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.speakers-section-title {
+.speakers-section-title
+{
     text-align: center;
     font-size: 36px;
-    color: #000000;
+    color: #0f172a;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
-.speakers-grid {
+.speakers-grid
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
-.speaker-card {
+.speaker-card
+{
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
@@ -201,28 +193,32 @@ body {
     flex-direction: column;
 }
 
-.speaker-image-box {
+.speaker-image-box
+{
     width: 100%;
     height: 300px;
     overflow: hidden;
     background-color: #f1f5f9;
 }
 
-.speaker-image-box img {
+.speaker-image-box img
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.speaker-info {
+.speaker-info
+{
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.speaker-track {
+.speaker-track
+{
     color: #2563eb;
     text-transform: uppercase;
     font-weight: 600;
@@ -230,54 +226,57 @@ body {
     letter-spacing: 0.5px;
 }
 
-.speaker-name {
+.speaker-name
+{
     color: #0f172a;
     font-size: 20px;
     font-weight: 700;
 }
 
-.speaker-role {
+.speaker-role
+{
     color: #64748b;
     font-size: 14px;
     line-height: 1.4;
 }
 
-/* ==========================================
-   Secure Your Spot Pricing Section Styles
-   ========================================== */
-.pricing-section {
+.pricing-section
+{
     padding: 80px 40px 100px 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.pricing-header {
+.pricing-header
+{
     text-align: center;
     margin-bottom: 56px;
 }
 
-.pricing-section-title {
+.pricing-section-title
+{
     font-size: 36px;
     color: #0f172a;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
-.pricing-section-subtitle {
+.pricing-section-subtitle
+{
     font-size: 15px;
     color: #64748b;
 }
 
-/* 3-Column horizontal flexible pricing cards layout */
-.pricing-grid {
+.pricing-grid
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     align-items: stretch;
 }
 
-/* Generic Card Baseline Setup */
-.pricing-card {
+.pricing-card
+{
     border-radius: 14px;
     padding: 40px 32px;
     display: flex;
@@ -285,7 +284,8 @@ body {
     justify-content: space-between;
 }
 
-.card-top {
+.card-top
+{
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -294,54 +294,62 @@ body {
     margin-bottom: 28px;
 }
 
-.tier-label {
+.tier-label
+{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.8px;
 }
 
-.price-box {
+/*Price Box*/
+
+.price-box
+{
     display: flex;
     align-items: flex-start;
     line-height: 1;
 }
 
-.price-box .currency {
+.price-box .currency
+{
     font-size: 24px;
     font-weight: 700;
     margin-top: 4px;
 }
 
-.price-box .amount {
+.price-box .amount
+{
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -1px;
 }
 
-.per-text {
+.per-text
+{
     font-size: 14px;
 }
 
-/* Feature Lists & Blue Custom Bullet Styles */
-.feature-list {
+.feature-list
+{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 40px;
-    flex-grow: 1; /* Pushes button systematically to the baseline */
+    flex-grow: 1;
 }
 
-.feature-list li {
+.feature-list li
+{
     font-size: 14px;
     position: relative;
     padding-left: 20px;
     line-height: 1.4;
 }
 
-/* Generates custom color-accurate bullet icons directly via CSS pseudo-selectors */
-.feature-list li::before {
+.feature-list li::before
+{
     content: "•";
     color: #2563eb;
     font-weight: bold;
@@ -351,8 +359,8 @@ body {
     top: -2px;
 }
 
-/* Generic baseline configuration for Tier Buttons */
-.btn-tier {
+.btn-tier
+{
     width: 100%;
     padding: 14px;
     font-size: 15px;
@@ -363,9 +371,10 @@ body {
     text-align: center;
 }
 
-/* Specific Card Themes & Custom Variations */
-/* 1. Standard (White Background with subtle border) */
-.card-standard {
+/*Standard Card  */
+
+.card-standard
+{
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
 }
@@ -383,42 +392,288 @@ body {
     background-color: #eff6ff;
 }
 
-/* 2. Pro (Dark Navy Background Highlight Card) */
+/*Pro Card  */
 .card-pro {
-    background-color: #0b1329; /* Exact rich deep dark navy color */
+    background-color: #0b1329;
     border: none;
 }
 .card-pro .tier-label { color: #38bdf8; }
 .card-pro .price-box { color: #ffffff; }
 .card-pro .per-text { color: #94a3b8; }
 .card-pro .feature-list li { color: #cbd5e1; }
-.card-pro .feature-list li::before { color: #38bdf8; } /* Bright light-blue bullets for dark section layout */
+.card-pro .feature-list li::before { color: #38bdf8; }
 
-.btn-solid-blue {
+.btn-solid-blue
+{
     background-color: #2563eb;
     color: #ffffff;
     border: none;
 }
-.btn-solid-blue:hover {
+.btn-solid-blue:hover
+{
     background-color: #1d4ed8;
 }
 
-/* 3. Team (Light Neutral Background) */
-.card-team {
+.card-team
+{
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
 }
-.card-team .tier-label { color: #64748b; }
-.card-team .price-box { color: #0f172a; }
-.card-team .per-text { color: #64748b; }
-.card-team .feature-list li { color: #334155; }
 
-.btn-outline-dark {
+.btn-outline-dark
+{
     background-color: transparent;
     color: #0f172a;
     border: 1px solid #0f172a;
 }
-.btn-outline-dark:hover {
+.btn-outline-dark:hover
+{
     background-color: #f1f5f9;
 }
 
+/*Registration Section */
+
+.registration-section
+{
+    background-color: #f8fafc;
+    padding: 100px 40px;
+    width: 100%;
+}
+
+.registration-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+/* Left Styles */
+.registration-perks
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.perks-badge
+{
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.perks-title
+{
+    font-size: 36px;
+    color: #0f172a;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.perks-desc
+{
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.perks-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.perks-list li
+{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.perks-list .check-icon
+{
+    background-color: #eff6ff;
+    color: #2563eb;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.perks-list strong
+{
+    display: block;
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.perks-list p
+{
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+/* Registration Section */
+
+.registration-form-card
+{
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+}
+
+.form-card-title
+{
+    font-size: 22px;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.workshop-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group select
+{
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0f172a;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.form-group select:focus
+{
+    outline: none;
+    border-color: #2563eb;
+}
+
+.btn-form-submit
+{
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.btn-form-submit:hover
+{
+    background-color: #1d4ed8;
+}
+
+/*Footer Section*/
+
+.site-footer
+{
+    background-color: #0b1329;
+    padding: 48px 40px;
+    width: 100%;
+}
+
+.footer-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28px;
+}
+
+.footer-logo
+{
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-socials
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icon
+{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Horizontal line */
+
+.footer-divider
+{
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12); 
+    margin: 0 0 24px 0;
+    width: 100%;
+}
+
+.footer-bottom-row
+{
+    text-align: center;
+}
+
+.footer-copyright
+{
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: 400;
+}

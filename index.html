@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEVCONF 2026 Portfolio</title>
+    <title>Dev</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
         <div class="logo-container">
-            <div class="logo-icon">
-                <span>&lt;/&gt;</span>
-            </div>
-            <div class="logo-text">
-                <span class="logo-title">DEVCONF</span>
-                <span class="logo-year">2026</span>
-            </div>
+            <img src="./image/logo.png" alt="Logo" class="navbar-logo">
         </div>
 
         <nav class="nav-menu">
@@ -159,6 +153,97 @@
             </div>
         </div>
     </section>
+
+    <section class="registration-section">
+        <div class="registration-container">
+            <div class="registration-perks">
+                <div class="perks-badge">WORKSHOPS</div>
+                <h2 class="perks-title">Level Up Your Engineering Skills</h2>
+                <p class="perks-desc">Dive deep into highly interactive, practical learning environments led directly by elite world-class maintainers and industry experts.</p>
+                
+                <ul class="perks-list">
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Limited Seats Available</strong>
+                            <p>Small group cohorts ensuring 1-on-1 environment mentoring guidelines.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Official Certificate of Completion</strong>
+                            <p>Verify your updated technical competence securely on LinkedIn easily.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Hands-on Production Projects</strong>
+                            <p>Build, test, and ship complete live open-source application software templates.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="registration-form-card">
+                <h3 class="form-card-title">Register for a Track</h3>
+                <form class="workshop-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-addr">Email Address</label>
+                        <input type="email" id="email-addr" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="github-user">GitHub Handle</label>
+                        <input type="text" id="github-user" name="github" placeholder="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tech-track">Select Tech Track</label>
+                        <div class="select-wrapper">
+                            <select id="tech-track" name="track" required>
+                                <option value="" disabled selected>Choose your track...</option>
+                                <option value="ai-ml">AI / ML Track</option>
+                                <option value="cloud-devops">Cloud & DevOps Track</option>
+                                <option value="frontend">Frontend Architecture Track</option>
+                                <option value="security">Advanced Security Track</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-form-submit">Reserve My Workshop Seat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <div class="footer-brand">
+                    <img src="./image/footer-logo.png" alt="DEVCONF Logo" class="footer-logo">
+                </div>
+                
+                <div class="footer-socials">
+                        <img src="./image/facebook-logo-preview.jpg" alt="Facebook" class="social-icon">
+                        <img src="./image/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom-row">
+                <p class="footer-copyright">&copy; 2026 DEVCONF. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
